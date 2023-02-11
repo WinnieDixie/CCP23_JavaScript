@@ -1,0 +1,95 @@
+Notes started 2/10
+__________________
+Commenting on JavaScript code
+//This is an in-line comment.
+/* This is a multi-line comment */
+__________________
+Data Types
+-undefined
+variables are declared with the initial value of undefined
+-null
+
+-boolean
+
+-string
+"12"
+-symbol
+
+-bigint
+
+-number
+12
+-object
+
+Variables allow computers to store and manipulate data. (var)
+Can not start with numbers or have spaces. 
+var myName;
+
+__________________
+Storing Values in Variables
+assignment (=)
+var a;
+a = 7;
+
+__________________
+Assigning the value of one variable to another
+var a;
+a = 7;
+var b;
+b = a;
+Be careful of order
+
+__________________
+Initialize variables with the assignment operator
+var a = 9;
+
+__________________
+Declare string Variables
+-string literal
+a series of zeros or characters enclosed in single or double quotes.
+var myFirstName = "Your first name";
+var myLastName = "Your last name";
+
+__________________
+Uninitialized variables
+JavaScript variables are declared with the initial value of undefined.
+If used in a mathematical operation; result will be NaN.
+BEFORE
+var a;
+var b;
+var c;
+a = a + 1;
+b = b + 5;
+c = c + "String!";
+
+AFTER
+var a = 5;
+var b = 10;
+var c = "I am a";
+a = a + 1;
+b = b + 5;
+c = c + "String!";
+
+__________________
+Case Sensitivity in Variables
+all variables and function names are case sensitive.
+MYVAR /= MyVar or myvar
+Best Practice is camelCase
+BEFORE
+var StUdLyCapVaR;
+var properCamelCase;
+var TitleCaseOver;
+STUDLYCAPVAR = 10;
+PRoperCAmelCAse = "A String";
+tITLEcASEoVER = 9000;
+
+AFTER
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+
+__________________
+
