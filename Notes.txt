@@ -3,10 +3,12 @@ Key : () operation
       [] equation
       - many words
       ____ page break
+      
 __________________
 Commenting on JavaScript code
 //This is an in-line comment.
 /* This is a multi-line comment */
+
 __________________
 Data Types
 -undefined
@@ -23,11 +25,13 @@ variables are declared with the initial value of undefined
 Variables allow computers to store and manipulate data. (var)
 Can not start with numbers or have spaces. 
 var myName;
+
 __________________
 Storing Values in Variables
 assignment (=)
 var a;
 a = 7;
+
 __________________
 Assigning the value of one variable to another
 var a;
@@ -35,15 +39,18 @@ a = 7;
 var b;
 b = a;
 Be careful of order
+
 __________________
 Initialize variables with the assignment operator
 var a = 9;
+
 __________________
 Declare string Variables
 -string literal
 a series of zeros or characters enclosed in single or double quotes.
 var myFirstName = "Your first name";
 var myLastName = "Your last name";
+
 __________________
 Uninitialized variables
 JavaScript variables are declared with the initial value of undefined.
@@ -62,6 +69,7 @@ var c = "I am a";
 a = a + 1;
 b = b + 5;
 c = c + "String!";
+
 __________________
 Case Sensitivity in Variables
 all variables and function names are case sensitive.
@@ -133,11 +141,11 @@ Compound with Augmented Addition
 let a = 3;
 let b = 17;
 let c = 12;
-~~~
+~~~ Long
 a = a + 12;
 b = 9 + b;
 c = c + 7;
-~~~
+~~~ Short
 a += 12;
 b += 9;
 c += 7;
@@ -146,11 +154,11 @@ Compound with Augmented Subtraction
 let a = 11;
 let b = 9;
 let c = 3;
-~~~
+~~~ Long
 a = a - 6;
 b = b - 15;
 c = c - 1;
-~~~
+~~~ Short
 a -= 6;
 b -= 15;
 c -= 1;
@@ -159,11 +167,11 @@ Compound with Augmented Multiplication
 let a = 5;
 let b = 12;
 let c = 4.6;
-~~~
+~~~ Long
 a = a * 5;
 b = 3 * b;
 c = c * 10;
-~~~
+~~~ Short
 a *= 5;
 b *= 3;
 c *= 10;
@@ -172,14 +180,57 @@ Compound with Augmented Division
 let a = 48;
 let b = 108;
 let c = 33;
-~~~
+~~~ Long
 a = a / 12;
 b = b / 4 ;
 c = c / 11;
-~~~
+~~~ Short
 a /= 12;
 b /= 4;
 c /= 11;
 
 __________________
 Escaping Literal Quotes in Strings
+To make the string: "I am a "double quoted" string inside "double quotes"."
+use a backslash (\).
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+Quoting Strings with Single Quotes
+string values can be written with single or double quotes.
+const doubleQuoteStr = "This is a double quote STRING";
+const singleQuoteStr = "This is a single quote STRING";
+Note: The backslash \ should not be confused with the forward slash /. They do not do the same thing.
+~~~ Wrong
+const myStr = "<a herf=\"http://www.example.com\" target=\"_blank\">Link</a>";
+~~~ Right
+const myStr = '<a herf="http://www.example.com" target="_blank">Link</a>'
+
+__________________
+Escape Sequences in Strings
+┌──────────────────────────┐
+│     CODE  OUTPUT         │
+│   [\']  single quote     │
+│   [\"]  double quote     │
+│   [\\]  backslash        │
+│   [\n]  newline          │
+│   [\t]  tab              │
+│   [\b]  backspace        │
+│   [\f]  form feed        │
+│   [\r]  carriage return  │   
+└──────────────────────────┘
+Note that the backslash itself must be escaped in order to display as a backslash.
+Create this text
+FirstLine
+      \SecondLine
+ThirdLine
+~~~ Wrong
+const myStr = "FirstLine"\n\t"\SecondLine\"\n\"ThirdLine\"; 
+~~~ Right
+const myStr = "FirstLine\n\t\\\SecondLine\nThirdLine"; 
+
+
+
+
+
+
+
