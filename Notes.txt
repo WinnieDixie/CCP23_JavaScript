@@ -1,4 +1,8 @@
 Notes started 2/10
+Key : () operation
+      [] equation
+      - many words
+      ____ page break
 __________________
 Commenting on JavaScript code
 //This is an in-line comment.
@@ -92,4 +96,103 @@ properCamelCase = "A String";
 titleCaseOver = 9000;
 
 __________________
+(var) can overwrite variable declarations
+(let) a variable with the same nae can only be declared
 
+__________________
+(const) can declare variables are read-only
+
+__________________
+const myVar = 5 + 10;
+const sum = 10 + 10;
+const different = 45 - 33;
+const product = 8 * 10;
+const quotient = 66 / 33;
+
+__________________
+(++) operator add one to variable
+[i++] === [i = i + 1]
+(--) operator minus one to variable
+[i--] === [i = i - 1]
+*has to be touching*
+*no equal sign above stated only*
+
+__________________
+Decimal numbers nickname are floats or floating point numbers
+*use caution, when you compute numbers they are computed with finite precision. may lead to different outcomes*
+const ourDecimal = 5.7;
+let myDecimal = 5.7;
+*you can use (let) (const) (var)*
+
+Multiply decimals
+const product = 2.0 * 2.5;
+
+Divide decimals
+const quotient = 4.4 / 2.0;
+
+Remainders is the percentage
+5 % 2 = 1
+5 / 2 = 2 remainder 1
+2 * 2 = 4
+5 - 4 = 1
+const remainder =  11 % 3 
+11 % 3 = 2
+11 / 3 = 3 remainder 2
+3 * 3 = 9
+11 - 9 = 2
+
+__________________
+Compound with Augmented Addition
+let a = 3;
+let b = 17;
+let c = 12;
+~~~
+a = a + 12;
+b = 9 + b;
+c = c + 7;
+~~~
+a += 12;
+b += 9;
+c += 7;
+
+Compound with Augmented Subtraction
+let a = 11;
+let b = 9;
+let c = 3;
+~~~
+a = a - 6;
+b = b - 15;
+c = c - 1;
+~~~
+a -= 6;
+b -= 15;
+c -= 1;
+
+Compound with Augmented Multiplication
+let a = 5;
+let b = 12;
+let c = 4.6;
+~~~
+a = a * 5;
+b = 3 * b;
+c = c * 10;
+~~~
+a *= 5;
+b *= 3;
+c *= 10;
+
+Compound with Augmented Division
+let a = 48;
+let b = 108;
+let c = 33;
+~~~
+a = a / 12;
+b = b / 4 ;
+c = c / 11;
+~~~
+a /= 12;
+b /= 4;
+c /= 11;
+
+__________________
+Escaping Literal Quotes in Strings
