@@ -228,8 +228,41 @@ const myStr = "FirstLine"\n\t"\SecondLine\"\n\"ThirdLine\";
 ~~~ Right
 const myStr = "FirstLine\n\t\\\SecondLine\nThirdLine"; 
 
+__________________
+Concatenating Strings
+Plus Operator
+(+) when the operator is used with a String value, it is called the cancatencation operator.
+Note Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+~ Example
+[const myStr = 'My name is Alan,' + 'I concatente.';]
+~ Result
+My name is Alan,I concatente.
+~~~ Final
+[const myStr = " ";] This is the start. This is the end.
+~~~ Result
+[const myStr = "This is the start. " + "This is the end."]
+This is the start. This is the end.
 
+Plus Equals Operator
+(+=) This operator is very helpful to break a long string over several lines.
+~ Example
+[let ourStr = "I come first. ";
+ourStr += "I come second.";]
+~ Result
+[ourStr] has the value of [I come first. I come second.]
+~~~ Question
+Build [myStr] over several lines by concatenating these two strings: [This is the first sentence.] and [This is the second sentence.] using the (+=) operator. Use the (+=) operator similar to how it is shown in the example and be sure to include a space between the two strings. Start by assigning the first string to [myStr], then add on the second string.
+~~~ Answer
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+Note Keep an eye on periods.
 
+__________________
+Constructing Strings with Variables
+(+) Using this concatenation operator, you can insert one or more variables into a string.
+~ Example
+[const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is" + ourName + ", how are you?";]
 
 
 
