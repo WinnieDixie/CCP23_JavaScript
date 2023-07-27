@@ -1,0 +1,28 @@
+Arrays is like a number list. A multi-dimensional array is a list inside a list. 
+There shouldn't be any spaces between the array name and the square brackets, like array [0][0] and even this array [0] [0] is not allowed.
+Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+
+subarray is  [[10, 11, 12], 13, 14];
+nestedSubarray = [10, 11, 12];
+element is 11;
+
+An easy way to append data to the end of an array is via the push() function.
+.push() takes one or more parameters and "pushes" them onto the end of the array.
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+
+Now arr1 = [1,2,3,4];
+Now arr2 = ["Stimpson", "J", "cat", ["happy", "joy"]];
